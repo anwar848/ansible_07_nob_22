@@ -1,5 +1,5 @@
 ---
-- hosts: 172.31.7.187
+- hosts: mywebservers
   become: yes
   tasks:
   - name: i want to install web server on ansible nodes 
@@ -12,8 +12,7 @@
       name: apache2
       state: started
     
-
   - name: i want to install redhat server on ansible nodes
     yum:
       name: httpd
-      state: present
+      state: presen
