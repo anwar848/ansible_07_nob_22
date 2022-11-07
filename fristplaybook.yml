@@ -12,21 +12,9 @@
     service:
       name: apache2
       state: started
-    
 
-  
-  - name: i want to install web ser server on ansibel nodes 
-    apt:
-      name: tree
-      state: present
-    when: ansible_os_family== "Debian"
-
-  - name: i want to install webserver on ansible nodes 
-    apt: 
-      name: nginx
-      state: present
-  
   - name: i want to install redhat server on ansible nodes
     yum:
       name: httpd
       state: present
+    when: ansible_os_family== "RedHat"
