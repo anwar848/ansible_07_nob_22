@@ -15,4 +15,4 @@
   - name: i want to install redhat server on ansible nodes
     yum:
       name: httpd
-      state: presen
+      state: present
