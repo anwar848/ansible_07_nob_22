@@ -2,17 +2,17 @@
 - hosts: all
   become: yes
   tasks:
-  - tasks: i want to install web server on ansible nodes 
+  - name: i want to install web server on ansible nodes 
     apt: 
       name: apache2
       state: started
   
-  - tasks: i want to install web ser server on ansibel nodes 
+  - name: i want to install web ser server on ansibel nodes 
     apt:
       name: tree
       state: started
 
-  - tasks: i want to install webserver on ansible nodes 
+  - name: i want to install webserver on ansible nodes 
     apt: 
       name: nginx
       state: started
