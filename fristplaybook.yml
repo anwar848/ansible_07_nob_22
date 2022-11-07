@@ -1,5 +1,5 @@
 ---
-- hosts: 172.31.7.187
+- hosts: mywebservers
   become: yes
   tasks:
   - name: i want to install web server on ansible nodes 
@@ -17,3 +17,4 @@
     yum:
       name: httpd
       state: present
+    when: ansible_os_family== "RedHat"
