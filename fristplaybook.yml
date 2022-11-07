@@ -5,14 +5,14 @@
   - name: i want to install web server on ansible nodes 
     apt: 
       name: apache2
-      state: started
+      state: present
   
   - name: i want to install web ser server on ansibel nodes 
     apt:
       name: tree
-      state: started
+      state: present
 
   - name: i want to install webserver on ansible nodes 
     apt: 
       name: nginx
-      state: started
+      state: present
