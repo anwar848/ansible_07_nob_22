@@ -26,7 +26,7 @@
       name: nginx
       state: present
   
-  - name: i want to start redhat server on ansible nodes
+  - name: i want to install redhat server on ansible nodes
     yum:
       name: httpd
       state: present
